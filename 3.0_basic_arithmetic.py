@@ -57,5 +57,3 @@ else:
 
 division = number_1 / number_2
 print("The division of two number is:", division)
-
-fuck = input("i want you die")

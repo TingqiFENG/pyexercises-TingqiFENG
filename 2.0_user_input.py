@@ -35,3 +35,9 @@ DELIVERABLE
 # Your code below
 
 name =input("Enter your name")
+age = input("Enter your age")
+
+print("The user's name is:", name)
+print("The user's age is:", age)
+
+print("The user's name is", name, "and their age is", age)

@@ -35,5 +35,6 @@ print("3.TingqiFENG")
 print("4.TingqiFENG")
 print("5.TingqiFENG")
 
+print("Printing with for loop")
 for number in range(1,6):
     print (number,"TingqiFENG")
