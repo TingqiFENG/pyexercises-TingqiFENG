@@ -28,18 +28,45 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
+# 1. In: Text input from the user (their answer to a question).
+# 2. Process: - Ask the user a question (e.g., "Do you agree?").
+#    - Check if the answer, after cleaning spaces and converting to lowercase, is "yes".
+#    - Count how many attempts the user makes.
+#    - If the answer is "yes", stop the loop.
+#    - If the user reaches the maximum number of attempts without saying "yes", stop the loop anyway.
+
 # 3. Out:
-# 4. My stop condition, my attempt limit, my summary:
+#    A summary printed after the loop ends. It shows:
+#    - How many attempts were made.
+#    - Whether the user succeeded or hit the attempt limit.
+
+# 4. Stop condition, maximum attempts, and summary content:
+#    - Stop condition: User enters "yes" (case-insensitive, spaces ignored).
+#    - Maximum attempts: 5
+#    - Summary contains: total attempts made, and whether the goal was reached.
 
 
-while i < 5:
-    print("This is attempt number", i + 1)
-    i=i+1
+max_attempts = 5
+attempts = 0
+success = False
 
+while attempts < max_attempts:
+    answer = input("Do you agree? (yes/no): ")
+    attempts = attempts + 1
 
-print("This is the end of the loop. The maximum number of attempts was reached.")
+    # Clean the answer: remove spaces and make it lowercase
+    cleaned = answer.strip().lower()
 
+    if cleaned == "yes":
+        success = True
+        break   # exit the loop early because the condition is met
 
+# After the loop, display the summary
+print("--- Summary ---")
+print("Total attempts:", attempts)
+
+if success:
+    print("Result: You agreed! Loop stopped early.")
+else:
+    print("Result: Maximum attempts reached without agreement.")
 

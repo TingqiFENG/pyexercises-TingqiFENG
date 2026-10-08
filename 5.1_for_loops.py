@@ -24,16 +24,36 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
+# 1. In:A list of names (strings) that I copied and modified from Exercise 4.0.
+#    My original 4.0 list was numbers, which I found too simple. I replaced it with
+#    names to make the computation more meaningful.
+#    names = ["Anna", "Bob", "Charlie", "David", "Eva", "Frank", "Grace", "Hannah"]
+# 2. Process:#    I use a for loop with enumerate() to process each name.
+#    Inside the loop, I compute the length of each name using len().
+#    I also use enumerate() to get both the position (index) and the name itself.
+#    To start the position at 1 instead of 0, I use start=1.
+# 3. Out:#    One line per name. Each line shows:
+#    - The position of the name in the list (1-based)
+#    - The name itself
+#    - The number of letters (length) computed for that name
+#
+#    Example of a printed line:
+#    Position 1: Anna has 4 letters.
 # 4. What I compute for each item, and why it is worth showing:
+#    I compute the length of each name using len(). 
+#    The reader learns how long each name is, which is useful information when
+#    analyzing a list of words. This computation demonstrates how to process each
+#    item individually while also tracking its position in the list.
+
 
 
 # Your code below
+
 names = ["Anna", "Bob", "Charlie", "David", "Eva", "Frank", "Grace", "Hannah"]
 
 print("The third item in the list", names[2])
 
-for name in names:
-    print("Hello," + name + "!" )
+for position, name in enumerate(names, start=1):
+    length = len(name)
+    print("Position " + str(position) + ": " + name + " has " + str(length) + " letters.")
+    
