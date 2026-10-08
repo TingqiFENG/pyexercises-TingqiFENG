@@ -29,7 +29,7 @@ DELIVERABLE
 # 2. Process: Display the list in four different orders. Two methods return new lists
 #             (original unchanged), and two methods modify the list in place.
 # 3. Out: Four reordered versions printed, followed by the original list to prove
-#         it survived (after restoring it).
+#         it survived (after restoring it)
 # 4. My four orders, and which ones modify the original:
 #    - sorted(original) ascending: Returns a NEW list. Original NOT modified.
 #    - sorted(original, reverse=True) descending: Returns a NEW list. Original NOT modified.
