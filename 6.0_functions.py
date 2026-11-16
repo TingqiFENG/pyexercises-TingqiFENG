@@ -25,39 +25,60 @@ CHECK IT YOURSELF
 DELIVERABLE
     This file, with your comments and your code.
 """
+# Exercise 6.0 — Naming a piece of work
+# Name: Tingqi FENG
 
 # 1. In:
+# The function receives a list of numbers, like the list
+# I created in Exercise 4.0.
+
 # 2. Process:
+# It starts with a total of zero.
+# It loops through the list and adds each number to the total.
+
 # 3. Out:
+# The function returns the sum of all numbers in the list.
+
 # 4. My function name, and why return rather than print:
+# calculate_list_total clearly describes what the function does.
+# Returning the total allows me to store it, reuse it in another
+# calculation, or print it outside the function.
+# Printing inside the function alone would only display the value,
+# rather than return the calculated result to the caller.
+
+# Empty-list behaviour:
+# An empty list returns 0 because there are no numbers to add.
+# This is acceptable because the total of an empty list is zero.
 
 
-# Your code below
-num_1 = 2
+# Calculate and return the total of a list of numbers.
+def calculate_list_total(numbers):
+    total = 0
 
-num_2 = 3
-sum = num_1 + num_2
-print("The sum of two numbers is: ", sum)
+    for number in numbers:
+        total += number
 
-num_1 = 5
-num_2 = 4
-sum = num_1 + num_2
-print("The sum of two numbers is: ", sum)
+    return total
 
 
-def sum(number_1, number_2):
-    sum_numbers = number_1 + number_2
-    print("The sum is : ", sum_numbers)
-    return None
+# Use my original list from Exercise 4.0 and two different inputs.
+list_of_numbers = [10, 9, 8, 7, 6, 5]
+second_list = [2, 3, 4, 5]
+third_list = [-5, 0, 10]
 
 
-def add_numbers(num1, num2):
-    sum_result = num1 + num2
-    return sum_result
+# Call the function three times and store the returned results.
+first_total = calculate_list_total(list_of_numbers)
+second_total = calculate_list_total(second_list)
+third_total = calculate_list_total(third_list)
 
 
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
+# Display the three results outside the function.
+print("Total of the first list:", first_total)
+print("Total of the second list:", second_total)
+print("Total of the third list:", third_total)
 
-result = add_numbers(num1, num2)
-print("Sum:", result)
+
+# Test the function with an empty list.
+empty_total = calculate_list_total([])
+print("Total of an empty list:", empty_total)
