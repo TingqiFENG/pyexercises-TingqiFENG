@@ -454,3 +454,91 @@ Refused, off topic.
 **Tutor:**
 
 Refused, off topic.
+
+---
+## 2026-11-16 11:43, in .
+
+**Me:** Check if my code satisfies Q1, Q2, Q3 and Q4 for the project.
+
+**Tutor:**
+
+Refused, off topic.
+
+---
+## 2026-11-16 11:44, in .
+
+**Me:** How does score = reputation + budget // 200 work?
+
+**Tutor:**
+
+Refused, off topic.
+
+---
+## 2026-11-16 11:44, in .
+
+**Me:** What does random.shuffle do?
+
+**Tutor:**
+
+`random.shuffle` changes the order of items inside a list.
+
+```python
+import random
+
+toy_list = [10, 20, 30, 40]
+random.shuffle(toy_list)  # TODO: what does this line do to toy_list?
+print(toy_list)
+```
+
+Which function from the `random` module shuffles a list in place?
+
+---
+## 2026-11-16 11:45, in .
+
+**Me:** What does max(history) do?
+
+**Tutor:**
+
+Finding the largest value in a list.
+
+```python
+history = [12, 7, 23, 5, 18]
+largest = max(history)  # TODO: what does this line do?
+print(largest)
+```
+
+Which argument does the function `max` take?
+
+---
+## 2026-11-16 11:45, in .
+
+**Me:** What does save_result do?
+
+**Tutor:**
+
+Refused, off topic.
+
+---
+## 2026-11-16 11:45, in .
+
+**Me:** What does to_integer do?
+
+**Tutor:**
+
+Refused, off topic.
+
+---
+## 2026-11-16 11:45, in .
+
+**Me:** What does min(100, x) do?
+
+**Tutor:**
+
+The concept is: finding the smaller of two numbers.
+
+```python
+# TODO: replace 42 with a variable x
+smallest = min(100, x)
+```
+
+What must the type of x be so that min(100, x) works?
